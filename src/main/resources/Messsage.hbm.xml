@@ -1,20 +1,14 @@
 <?xml version="1.0"?>
-<!DOCTYPE hibernate-mapping PUBLIC
-        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping >
+<hibernate-mapping>
 <class name="hello.Message" table="MESSAGES">
 <id name="id" column="MESSAGE_ID">
 <generator class="increment"></generator>
 </id>
-
-
 <property name="text" column="MESSAGE_TEXT"></property>
 <many-to-one name="nextMessage" cascade="all" column="NEXT_MESSAGE_ID"
 foreign-key="FK_NEXT_MESSAGE"></many-to-one>
 </class>
-
-
-
-</hibernate-mapping
+</hibernate-mapping>

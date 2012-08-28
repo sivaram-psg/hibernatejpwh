@@ -8,8 +8,8 @@
   <!-- Database connection settings -->
   <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
   <property name="connection.url">jdbc:mysql://localhost/test</property>
-  <property name="connection.username">hdirect</property>
-  <property name="connection.password">hdirect</property>
+  <property name="connection.username">devuser</property>
+  <property name="connection.password">devpass</property>
   <property name="connection.shutdown">true</property>
   <!-- JDBC connection pool (use the built-in one) -->
   <property name="connection.pool_size">1</property>
@@ -19,9 +19,9 @@
   <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
   <!-- Echo all executed SQL to stdout -->
   <property name="show_sql">true</property>
-  <property name="hibernate.hbm2ddl.auto">update</property>
-  <!--     <property name="hibernate.hbm2ddl.auto">create</property> 
- List all the mapping documents we're using -->
+  <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+ <property name="hibernate.hbm2ddl.auto">create</property> 
+<!--  List all the mapping documents we're using -->
   <mapping resource="hello/Track.hbm.xml"/>
   <mapping resource="hello/Message.hbm.xml"/>
  </session-factory>

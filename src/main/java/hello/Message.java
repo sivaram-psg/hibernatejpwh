@@ -1,6 +1,10 @@
 package hello;
 
-public class Message {
+public class Message implements java.io.Serializable  {
+/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4081554116209185052L;
 private Long id;
 private String text;
 private Message nextMessage;
